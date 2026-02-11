@@ -5,9 +5,7 @@
 <title>Portafolio - Mirko Diaz Alviar</title>
 
 <style>
-*{
-    box-sizing: border-box;
-}
+*{ box-sizing:border-box; }
 
 body{
     margin:0;
@@ -16,7 +14,7 @@ body{
     color:#e5e7eb;
 }
 
-/* ENCABEZADO */
+/* HEADER */
 header{
     padding:70px 20px;
     text-align:center;
@@ -30,6 +28,36 @@ header h1{
 header p{
     font-size:22px;
     color:#94a3b8;
+}
+
+/* BOTONES */
+.buttons{
+    margin-top:20px;
+}
+
+.buttons a{
+    text-decoration:none;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:30px;
+    font-weight:bold;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.linkedin{
+    background:#0A66C2;
+    color:white;
+}
+
+.github{
+    background:#111827;
+    color:white;
+    border:1px solid #38bdf8;
+}
+
+.buttons a:hover{
+    transform:scale(1.05);
 }
 
 /* CONTENEDOR */
@@ -46,13 +74,13 @@ header p{
     gap:30px;
 }
 
-/* TARJETAS */
+/* CARD */
 .card{
     background:#020617;
     border-radius:18px;
     padding:25px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition:0.3s;
 }
 
 .card:hover{
@@ -61,18 +89,15 @@ header p{
 }
 
 .card h2{
-    margin-top:0;
     color:#38bdf8;
 }
 
-/* IMÁGENES */
 .card img{
     width:100%;
     border-radius:12px;
     margin:15px 0;
 }
 
-/* VIDEO */
 .card iframe{
     width:100%;
     height:220px;
@@ -80,7 +105,6 @@ header p{
     margin-top:15px;
 }
 
-/* TEXTO */
 .tech{
     color:#94a3b8;
     font-size:14px;
@@ -93,67 +117,69 @@ header p{
 
 <header>
     <h1>Mirko Diaz Alviar</h1>
-    <p>Ingeniería Mecatrónica · UTEC · Portafolio de Proyectos</p>
+    <p>Ingeniería Mecatrónica · UTEC · 6° Ciclo</p>
+
+    <div class="buttons">
+
+        <a href="https://www.linkedin.com/in/b-b-3530a3278/" 
+           target="_blank" 
+           class="linkedin">
+           LinkedIn
+        </a>
+
+        <a href="https://github.com/Inmortal144" 
+           target="_blank" 
+           class="github">
+           GitHub
+        </a>
+
+    </div>
 </header>
 
-<!-- SOBRE MI -->
 <section class="container">
     <div class="card">
         <h2>Sobre mí</h2>
 
         <p>
-            Mi nombre es <b>Mirko Diaz Alviar</b>, estudiante de
-            <b>Ingeniería Mecatrónica</b> en la
-            <b>Universidad de Ingeniería y Tecnología (UTEC)</b>,
-            actualmente cursando el <b>6.º ciclo</b>.
+            Mi nombre es <b>Mirko Diaz Alviar</b>, estudiante de Ingeniería Mecatrónica 
+            en la Universidad de Ingeniería y Tecnología (UTEC), actualmente en 6° ciclo.
         </p>
 
         <p>
-            Me interesa profundamente la <b>inteligencia artificial</b>,
-            los <b>drones</b>, la <b>automatización</b>, la
-            <b>visión por computador</b>, la <b>detección de objetos</b>
-            y el desarrollo de <b>robots</b> y sistemas inteligentes.
+            Me apasiona la inteligencia artificial, visión por computador, 
+            drones, automatización y robótica. Me enfoco en comprender cómo 
+            funcionan los sistemas desde cero para poder construirlos por mi cuenta.
         </p>
 
         <p>
-            Actualmente me capacito en la <b>fabricación de placas electrónicas</b>,
-            sistemas de detección y en la integración de hardware con software.
-            Soy una persona curiosa, enfocada en comprender <b>cómo se hacen las cosas</b>
-            para luego construirlas por cuenta propia.
-        </p>
-
-        <p>
-            Mi objetivo es <b>transformar ideas en soluciones físicas reales</b>,
-            llevando conceptos abstractos y creatividad al mundo material mediante tecnología.
+            Actualmente me capacito en fabricación de placas electrónicas, 
+            detección de objetos e integración hardware-software. 
+            Mi objetivo es transformar ideas en soluciones físicas reales.
         </p>
 
         <p class="tech">
-            Áreas de interés: IA · Visión por Computador · Drones · Automatización ·
-            Robótica · Electrónica · Sistemas Embebidos
+            IA · Visión por Computador · Drones · Automatización · Robótica · Electrónica
         </p>
     </div>
 </section>
 
-<!-- PROYECTOS -->
 <section class="container">
     <h2 style="color:#38bdf8;">Proyectos</h2>
 
     <div class="projects">
 
-        <!-- PROYECTO 1 -->
         <div class="card">
             <h2>Amplificador de Frecuencia</h2>
 
-            <img src="amplificador.jpg" alt="Circuito amplificador de frecuencia">
+            <img src="amplificador.jpg" alt="Circuito amplificador">
 
             <p>
-                Diseño y construcción de un circuito amplificador de frecuencia,
-                enfocado en el análisis de ganancia y respuesta de señal.
+                Diseño y construcción de un circuito amplificador de frecuencia, 
+                analizando ganancia, respuesta de señal y comportamiento del sistema.
             </p>
 
             <p class="tech">
-                Tecnologías: Electrónica analógica · Amplificadores operacionales ·
-                Protoboard · Medición de señales
+                Electrónica analógica · Amplificadores operacionales · Medición de señales
             </p>
 
             <iframe
@@ -161,18 +187,6 @@ header p{
                 frameborder="0"
                 allowfullscreen>
             </iframe>
-        </div>
-
-        <!-- PROYECTO FUTURO -->
-        <div class="card">
-            <h2>Proyecto en Desarrollo</h2>
-            <p>
-                Proyecto relacionado con visión por computador, detección de objetos
-                o robótica. Próximamente se añadirán imágenes y demostración.
-            </p>
-            <p class="tech">
-                Área: IA aplicada · Visión · Automatización
-            </p>
         </div>
 
     </div>
