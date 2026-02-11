@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Portafolio - Ingeniería Mecatrónica</title>
+<title>Portafolio - Mirko Diaz Alviar</title>
 
 <style>
 *{
@@ -18,17 +18,17 @@ body{
 
 /* ENCABEZADO */
 header{
-    padding:60px 20px;
+    padding:70px 20px;
     text-align:center;
 }
 
 header h1{
-    font-size:48px;
+    font-size:50px;
     margin-bottom:10px;
 }
 
 header p{
-    font-size:20px;
+    font-size:22px;
     color:#94a3b8;
 }
 
@@ -39,18 +39,18 @@ header p{
     padding:20px;
 }
 
-/* GRID DE PROYECTOS */
+/* GRID */
 .projects{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap:25px;
+    gap:30px;
 }
 
 /* TARJETAS */
 .card{
     background:#020617;
     border-radius:18px;
-    padding:20px;
+    padding:25px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -77,13 +77,14 @@ header p{
     width:100%;
     height:220px;
     border-radius:12px;
+    margin-top:15px;
 }
 
 /* TEXTO */
 .tech{
     color:#94a3b8;
     font-size:14px;
-    margin-top:10px;
+    margin-top:15px;
 }
 </style>
 </head>
@@ -91,19 +92,59 @@ header p{
 <body>
 
 <header>
-    <h1>Portafolio de Ingeniería Mecatrónica</h1>
-    <p>Proyectos académicos y prácticos</p>
+    <h1>Mirko Diaz Alviar</h1>
+    <p>Ingeniería Mecatrónica · UTEC · Portafolio de Proyectos</p>
 </header>
 
-<div class="container">
+<!-- SOBRE MI -->
+<section class="container">
+    <div class="card">
+        <h2>Sobre mí</h2>
 
-    <section class="projects">
+        <p>
+            Mi nombre es <b>Mirko Diaz Alviar</b>, estudiante de
+            <b>Ingeniería Mecatrónica</b> en la
+            <b>Universidad de Ingeniería y Tecnología (UTEC)</b>,
+            actualmente cursando el <b>6.º ciclo</b>.
+        </p>
+
+        <p>
+            Me interesa profundamente la <b>inteligencia artificial</b>,
+            los <b>drones</b>, la <b>automatización</b>, la
+            <b>visión por computador</b>, la <b>detección de objetos</b>
+            y el desarrollo de <b>robots</b> y sistemas inteligentes.
+        </p>
+
+        <p>
+            Actualmente me capacito en la <b>fabricación de placas electrónicas</b>,
+            sistemas de detección y en la integración de hardware con software.
+            Soy una persona curiosa, enfocada en comprender <b>cómo se hacen las cosas</b>
+            para luego construirlas por cuenta propia.
+        </p>
+
+        <p>
+            Mi objetivo es <b>transformar ideas en soluciones físicas reales</b>,
+            llevando conceptos abstractos y creatividad al mundo material mediante tecnología.
+        </p>
+
+        <p class="tech">
+            Áreas de interés: IA · Visión por Computador · Drones · Automatización ·
+            Robótica · Electrónica · Sistemas Embebidos
+        </p>
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section class="container">
+    <h2 style="color:#38bdf8;">Proyectos</h2>
+
+    <div class="projects">
 
         <!-- PROYECTO 1 -->
         <div class="card">
             <h2>Amplificador de Frecuencia</h2>
 
-            <img src="amplificador.jpg" alt="Circuito amplificador">
+            <img src="amplificador.jpg" alt="Circuito amplificador de frecuencia">
 
             <p>
                 Diseño y construcción de un circuito amplificador de frecuencia,
@@ -115,26 +156,27 @@ header p{
                 Protoboard · Medición de señales
             </p>
 
-            <iframe 
+            <iframe
                 src="https://www.youtube.com/embed/cIbXG8VJ7dQ"
                 frameborder="0"
                 allowfullscreen>
             </iframe>
         </div>
 
-        <!-- PROYECTO 2 (placeholder) -->
+        <!-- PROYECTO FUTURO -->
         <div class="card">
-            <h2>Próximo Proyecto</h2>
+            <h2>Proyecto en Desarrollo</h2>
             <p>
-                Proyecto en desarrollo. Próximamente se añadirá descripción,
-                imágenes y demostración.
+                Proyecto relacionado con visión por computador, detección de objetos
+                o robótica. Próximamente se añadirán imágenes y demostración.
             </p>
-            <p class="tech">Área: Robótica / Automatización</p>
+            <p class="tech">
+                Área: IA aplicada · Visión · Automatización
+            </p>
         </div>
 
-    </section>
-
-</div>
+    </div>
+</section>
 
 </body>
 </html>
